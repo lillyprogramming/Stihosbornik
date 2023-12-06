@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Стихосборник</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="images/extras/circleCrab.png">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div id='game-canvas'></div>
+      
+        <!--oncontextmenu = false забранява излизането на меню при дясно кликане на мишката, тази настройка е нужна за tangram играта--> 
+        <body oncontextmenu="return false;">
+          
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/phaser-ce/2.12.0/phaser.js'></script>
+
+        <!--това е за тъмния режим.-->
+        <script>  
+            let matched = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+            if(matched) {
+              document.getElementsByTagName("body")[0].style = 'background-color: #3e3939;';   
+              document.getElementsByTagName("div")[0].style = 'background-color: #3e3939;';   
+            }
+            else {
+              document.getElementsByTagName("body")[0].style = 'background-color: aliceblue;';   
+              document.getElementsByTagName("div")[0].style = 'background-color: aliceblue;';   
+          }
+          </script>
+          
+        <script src='sources/00intro.js'></script>         
+        <script src='sources/01reception.js'></script>        
+        <script src='sources/02wholelibrary.js'></script>
+        <script src='sources/03readinglounge.js'></script>
+        <script src='sources/04hiddenbooks.js'></script>
+        <script src='sources/05sea.js'></script>
+        <script src='sources/06coloring.js'></script>
+        <script src='sources/07hangman.js'></script>
+        <script src='sources/08tangram.js'></script>
+        <script src='sources/09findthedifference.js'></script>
+        <script src='sources/10trivia.js'></script>
+        <script src='sources/11memorygame.js'></script>
+        <script src='sources/12anagramgame.js'></script>
+        <script src='sources/13endscreen.js'></script>
+        <script src='sources/14inventory.js'></script>
+
+        <script src='sources/connect.js'></script>
+    </body>
+</html>

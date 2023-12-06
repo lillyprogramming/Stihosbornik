@@ -1,0 +1,19 @@
+body {
+  margin-top: 25px;
+}
+canvas {
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+canvas.normal {
+  cursor: url(cursor.cur);
+}
+canvas.pointer {
+  cursor: url(cursor.cur);
+}
+*,
+html,
+body {
+  cursor: url(cursor.cur) 0 0, default;
+}
